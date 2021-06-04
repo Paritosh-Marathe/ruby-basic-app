@@ -1,0 +1,11 @@
+rails new app
+rails g controller home index
+rails g scaffold friend first_name:string last_name:string email:string phone:string twitter:string
+rails g migration add_user_id_to_friends user_id:integer:index
+
+
+<td><%= link_to 'Edit', edit_friend_path(friend) %></td>
+
+<li class="nav-item">
+  <%= link_to "Show Friends",friends_path,class:"nav-link"%>
+</li>
